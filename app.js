@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================================================
-    // CONTACT FORM SUBMISSION
+    // CONTACT FORM SUBMISSION (WHATSAPP FORMATTED REDIRECT)
     // ==========================================================================
     const contactForm = document.getElementById('contact_form');
     const submitBtn = document.getElementById('btn_submit_form');
@@ -121,17 +121,38 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
             submitBtn.style.opacity = '0.7';
 
+            // Get form values
+            const name = document.getElementById('form_name').value;
+            const email = document.getElementById('form_email').value;
+            const social = document.getElementById('form_social').value;
+            const service = document.getElementById('form_service').value;
+            const message = document.getElementById('form_message').value;
+
+            // Construct formatted message
+            let whatsappMessage = `Olá, estou interessado em trabalhar com o Gustavo Sidelove\n`;
+            whatsappMessage += `*Nome:* ${name}\n`;
+            whatsappMessage += `*Seu E-Mail:* ${email}\n`;
+            if (social.trim() !== '') {
+                whatsappMessage += `*Social/Site:* ${social}\n`;
+            }
+            whatsappMessage += `*Tipo de Trabalho:* ${service}\n`;
+            whatsappMessage += `*Proposta/Detalhes:* ${message}`;
+
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=5511959212998&text=${encodedMessage}`;
+
             // Simulate API request delay
             setTimeout(() => {
-                // Show high-end custom success notification (alert)
-                alert(`Obrigado pelo contato! Sua proposta foi simulada e enviada com sucesso.\n\nContataremos você em breve.`);
+                // Open WhatsApp link in new tab
+                window.open(whatsappUrl, '_blank');
                 
                 // Reset Form
                 contactForm.reset();
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
                 submitBtn.style.opacity = '1';
-            }, 1200);
+            }, 800);
         });
     }
 
