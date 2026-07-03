@@ -1,4 +1,4 @@
-# 🌌 Gustavo Sidelove — Portfólio Online Premium
+# 🌌 Gustavo Sidelove — Portfólio Online
 
 Este projeto é o site de apresentação oficial do modelo e criador de conteúdo **Gustavo Sidelove**. O objetivo principal do site é servir como um "composite digital" (portfólio online) moderno para apresentar seu trabalho e atrair contratos de marcas e agências.
 
