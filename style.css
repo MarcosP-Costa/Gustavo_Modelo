@@ -1240,7 +1240,23 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-muted);
 }
 
-.credits .designer {
-    color: var(--color-secondary);
-    font-weight: 600;
+/* ==========================================================================
+   IMAGE RENDER SUPPORT (z-index layering for placeholders)
+   ========================================================================== */
+.photo-placeholder-art img, .card-visual-placeholder img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    transition: transform var(--transition-normal);
+}
+
+.portfolio-card:hover .card-visual-placeholder img {
+    transform: scale(1.05);
+}
+
+.card-badge, .corner-borders {
+    z-index: 4 !important;
 }
