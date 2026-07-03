@@ -1,85 +1,30 @@
-# 🌌 Gustavo Modelo — Site Institucional Premium
+# 🌌 Gustavo Sidelove — Portfólio Online Premium
 
-<div align="center">
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-[![Deploy Status](https://img.shields.io/badge/GitHub_Pages-Active-blueviolet?style=for-the-badge&logo=github&logoColor=white)](#-deploy--github-pages)
-
-*Website institucional responsivo de alta performance e apelo visual premium para o modelo alternativo e influenciador digital **Gustavo Augusto (Gustavo Sidelove)**.*
-
-</div>
+Este projeto é o site de apresentação oficial do modelo e criador de conteúdo **Gustavo Sidelove**. O objetivo principal do site é servir como um "composite digital" (portfólio online) moderno para apresentar seu trabalho e atrair contratos de marcas e agências.
 
 ---
 
-## 🖤 Sobre o Projeto
+## 🖤 O que o site exibe?
 
-Este projeto consiste em um portfólio digital institucional voltado para o agenciamento, parcerias e exibição de ensaios fotográficos conceituais de **Gustavo Sidelove**.
-
-A interface foi projetada utilizando a estética **Cyber-Goth / Dark Mode Premium**, caracterizada por fundos pretos foscos profundos, acabamento em *Glassmorphism* (efeito de vidro fosco translúcido) e realces em gradientes neon de Violeta, Magenta e Ciano.
-
-### ✨ Diferenciais Técnicos
-*   **Sem Imagens Quebradas:** O design original utiliza molduras e padrões de arte abstratos em SVG integrados diretamente via CSS e HTML. O site fica completo e estético mesmo sem nenhuma imagem/foto carregada.
-*   **Filtro Dinâmico:** Portfólio interativo de fotos por categorias (Streetwear, Dark/Gothic, Artístico) controlado via vanilla JS de forma instantânea.
-*   **Micro-Interações Avançadas:** Efeitos de hover responsivos nas bordas de neon, animações *Scroll Reveal* para surgimento suave do conteúdo ao rolar e indicador visual de scroll do mouse.
-*   **Performance Absoluta:** Desenvolvido puramente em HTML5, CSS3 e Javascript puro (Vanilla) para garantir tempo de carregamento inferior a 0.5s e compatibilidade total de SEO.
+*   **Apresentação e Redes Sociais:** Destaque para o nome artístico e links diretos para Instagram, TikTok e WhatsApp.
+*   **Perfil Físico (Sobre):** Espaço para biografia e dados como altura, cor do cabelo e olhos.
+*   **Galeria Interativa (Portfólio):** Fotos separadas por categorias de trabalho (Streetwear, Dark/Gothic, Artístico) com um filtro rápido.
+*   **Serviços Oferecidos:** Tipos de trabalhos que ele realiza (Campanhas, Criação de Conteúdo, Presença em Eventos/Passarela).
+*   **Certificações e Formação:** Cursos e especializações técnicas para atestar o profissionalismo do modelo.
+*   **Formulário de Contato:** Uma área para marcas enviarem propostas comerciais que vão direto para o e-mail ou WhatsApp do modelo.
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📂 Onde estão os arquivos importantes?
 
-```bash
-Gustavo_Modelo/
-├── assets/
-│   └── images/
-│       └── .gitkeep        # Pasta destinada às fotos do modelo
-├── index.html              # Estrutura semântica e meta tags de SEO
-├── style.css               # Folha de estilo centralizada (Design System & Neon)
-├── app.js                  # Lógica de filtros, navegação e animações
-├── README.md               # Apresentação do repositório
-└── CONFIG.md               # Manual de customização de cores, fontes e fotos
-```
+Para fazer qualquer modificação simples no site, você usará principalmente esses arquivos:
+*   [index.html](file:///mnt/c/Marcos_Astra/Astra_Segundo_Cerebro/05_Github/03_Gustavo_Modelo/index.html): Contém todos os textos, dados físicos (altura, olhos, etc.) e links de contato.
+*   `assets/images/`: Pasta onde devem ser salvas as fotos do Gustavo.
+*   [CONFIG.md](file:///mnt/c/Marcos_Astra/Astra_Segundo_Cerebro/05_Github/03_Gustavo_Modelo/CONFIG.md): O manual prático passo a passo de como atualizar as fotos e textos do site.
 
 ---
 
-## 🚀 Como Executar Localmente
+## 🌐 Como visualizar o site
 
-Como o projeto é construído em tecnologia web estática pura, você não precisa de nenhuma ferramenta complexa ou processo de compilação:
-
-1. Clone o repositório ou faça o download da pasta.
-2. Dê um duplo clique no arquivo `index.html` para abri-lo diretamente em qualquer navegador moderno.
-
-*Alternativamente, para rodar sob um servidor local (via terminal do WSL):*
-```bash
-python3 -m http.server 8000
-```
-Depois, acesse `http://localhost:8000` no seu navegador.
-
----
-
-## 🌐 Deploy & GitHub Pages
-
-Este repositório está pronto para ser publicado de forma gratuita através do **GitHub Pages**:
-
-1. Acesse as **Settings (Configurações)** do seu repositório no GitHub.
-2. Na barra lateral esquerda, vá em **Pages**.
-3. Na seção *Build and deployment*, escolha **Deploy from a branch**.
-4. Em *Branch*, selecione **`main`** e a pasta root **`/ (root)`**.
-5. Clique em **Save**. 
-
-Em poucos minutos, seu link personalizado ficará ativo no formato:
-`https://[seu-usuario-github].github.io/Gustavo_Modelo/`
-
----
-
-## ⚙️ Customização
-
-Para obter instruções detalhadas de como alterar cores, substituir as fontes, ajustar o redimensionamento das fotos do portfólio ou configurar uma hospedagem externa de imagens (Imgur, Cloudinary), consulte o guia completo em:
-👉 **[CONFIG.md](file:///mnt/c/Marcos_Astra/Astra_Segundo_Cerebro/05_Github/03_Gustavo_Modelo/CONFIG.md)** (ou visualize no arquivo local).
-
----
-
-<div align="center">
-Desenvolvido com sofisticação para o ecossistema Astra por RitaIA.
-</div>
+*   **Online:** Acesse o link gerado pelo GitHub Pages do seu perfil (ex: `https://seu-usuario.github.io/Gustavo_Modelo/`).
+*   **No Computador (Local):** Basta dar dois cliques no arquivo [index.html](file:///mnt/c/Marcos_Astra/Astra_Segundo_Cerebro/05_Github/03_Gustavo_Modelo/index.html) para abri-lo diretamente em qualquer navegador de internet.
