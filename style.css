@@ -1336,3 +1336,123 @@ h1, h2, h3, h4, h5, h6 {
         height: 26px;
     }
 }
+
+/* ==========================================================================
+   TRAINING & CERTIFICATIONS SECTION
+   ========================================================================== */
+.training-section {
+    padding: 100px 0;
+    border-top: 1px solid var(--border-glass);
+    background: linear-gradient(180deg, rgba(13, 13, 17, 0.3) 0%, var(--bg-base) 100%);
+}
+
+.training-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.training-card:hover {
+    border-color: var(--border-glass-active);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.card-visual-header {
+    padding: 24px;
+    background: rgba(22, 22, 28, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-glass);
+    position: relative;
+}
+
+.card-visual-header svg {
+    color: var(--text-muted);
+    opacity: 0.5;
+    transition: all var(--transition-normal);
+}
+
+.training-card:hover .card-visual-header svg {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+/* Neon key lights based on class */
+.card-visual-header.neon-violet svg { color: var(--color-primary); }
+.card-visual-header.neon-cyan svg { color: var(--color-tertiary); }
+.card-visual-header.neon-magenta svg { color: var(--color-secondary); }
+
+.card-tag {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.card-visual-header.neon-violet .card-tag {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--color-primary);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.card-visual-header.neon-cyan .card-tag {
+    background: rgba(6, 182, 212, 0.1);
+    color: var(--color-tertiary);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.card-visual-header.neon-magenta .card-tag {
+    background: rgba(217, 70, 239, 0.1);
+    color: var(--color-secondary);
+    border: 1px solid rgba(217, 70, 239, 0.2);
+}
+
+.training-card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.training-card-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.training-institution {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.training-objection-breaker {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-top: 8px;
+    border-left: 2px solid var(--border-glass-active);
+    padding-left: 12px;
+}
+
+.training-card:hover .training-objection-breaker {
+    border-left-color: var(--color-primary);
+}
+
+.training-card:hover#course_business .training-objection-breaker {
+    border-left-color: var(--color-tertiary);
+}
+
+.training-card:hover#course_runway .training-objection-breaker {
+    border-left-color: var(--color-secondary);
+}

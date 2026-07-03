@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================================================
     // ADVANCED MICRO-INTERACTIONS (SCROLL REVEAL EFFECT)
     // ==========================================================================
-    const revealElements = document.querySelectorAll('.service-card, .portfolio-card, .stat-card, .about-photo-wrapper, .about-info');
+    const revealElements = document.querySelectorAll('.service-card, .portfolio-card, .stat-card, .about-photo-wrapper, .about-info, .training-card');
 
     const checkReveal = () => {
         const triggerBottom = window.innerHeight * 0.85;
